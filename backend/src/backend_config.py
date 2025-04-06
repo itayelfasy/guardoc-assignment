@@ -9,7 +9,7 @@ OPENAI_KEY = os.getenv('OPENAI_KEY')
 CHAT_MODEL = os.getenv('CHAT_MODEL', 'gpt-3.5-turbo')  # Default model
 
 # Database Configuration
-CHROMA_DB_PATH = os.getenv('CHROMA_DB_PATH', './chroma_db')
+CHROMA_DB_PATH = os.getenv('CHROMA_DB_PATH', 'chroma_db')
 COLLECTION_NAME = os.getenv('COLLECTION_NAME', 'medical_documents')
 
 # API Configuration

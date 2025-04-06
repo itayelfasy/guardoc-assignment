@@ -49,7 +49,7 @@ yarn-error.log*
 *.sublime-project
 
 # Project specific
-/backend/chroma_db/
+/backend/src/chroma_db/
 *.log
 .coverage
 htmlcov/
