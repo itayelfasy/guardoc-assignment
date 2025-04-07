@@ -122,16 +122,7 @@ medical-document-assistant/
    npm install
    ```
 
-3. Configure environment variables:
-
-   - Create a `.env` file in the frontend directory
-   - Add the following environment variables:
-
-   ```
-   REACT_APP_API_URL=http://localhost:8080
-   ```
-
-4. Start the development server:
+3. Start the development server:
    ```bash
    npm start
    ```
@@ -153,12 +144,6 @@ medical-document-assistant/
 | API_PORT        | Port to run the API server              | 8080                  |
 | DEBUG           | Enable debug mode                       | false                 |
 | CORS_ORIGINS    | Comma-separated list of allowed origins | http://localhost:3000 |
-
-### Frontend (.env)
-
-| Variable          | Description            | Default               |
-| ----------------- | ---------------------- | --------------------- |
-| REACT_APP_API_URL | URL of the backend API | http://localhost:8080 |
 
 ## Usage
 
