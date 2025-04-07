@@ -25,26 +25,29 @@ class ChromaDBHandler:
             n_results: Number of results to return
             
         Returns:
-            Dictionary containing documents and their metadata
+            Dictionary containing documents, their metadata, and distances
         """
         results = self.collection.query(
             query_texts=[query_text],
-            n_results=n_results
+            n_results=n_results,
+            include=["documents", "metadatas", "distances"]
         )
         return results
     
-    def add_documents(self, documents: list[str], ids: list[str] = None):
+    def add_documents(self, documents: list[str], metadatas: list[dict] = None ,ids: list[str] = None,):
         """
         Add documents to the ChromaDB collection.
         
         Args:
             documents: List of document texts
             ids: Optional list of document IDs
+            metadatas: Optional list of metadata dictionaries for each document
         """
         # if ids is None:
         #     ids = [f"doc_{i}" for i in range(len(documents))]
             
         self.collection.add(
-            documents=documents,
+            documents=documents,        
+            metadatas=metadatas,  
             ids=ids
         )

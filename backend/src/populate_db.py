@@ -27,7 +27,7 @@ def generate_patients(num_records=1000):
             print(f"Generated {i + 1} records...")
     
     print("Inserting records into ChromaDB...")
-    chroma_db_handler.add_documents(documents=documents, ids=ids)
+    chroma_db_handler.add_documents(documents=documents, metadatas=metadatas, ids=ids)
     return f"✅ Successfully inserted {num_records} patient records into ChromaDB"
 
 def main():
