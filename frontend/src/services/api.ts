@@ -1,4 +1,4 @@
-const API_BASE_URL = process.env.REACT_APP_API_URL || 'http://localhost:8090'
+const API_BASE_URL = process.env.REACT_APP_API_URL || 'http://localhost:8080'
 
 export interface QueryResponse {
   answer: string

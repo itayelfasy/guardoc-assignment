@@ -14,7 +14,7 @@ COLLECTION_NAME = os.getenv('COLLECTION_NAME', 'medical_documents')
 
 # API Configuration
 API_HOST = os.getenv('API_HOST', '0.0.0.0')
-API_PORT = int(os.getenv('API_PORT', '8090'))
+API_PORT = int(os.getenv('API_PORT', '8080'))
 DEBUG = os.getenv('DEBUG', 'false').lower() == 'true'
 
 # CORS Configuration
