@@ -201,13 +201,11 @@ Sends a question to the backend and receives an AI-generated response based on t
    - Add new endpoints in `backend/src/app.py`
    - Create new models in `backend/src/models/`
 
-## License
 
-This project is licensed under the MIT License - see the LICENSE file for details.
 
 ## Contributors
 
-- [Your Name]
+- Itay
 
 ## Acknowledgments
 
